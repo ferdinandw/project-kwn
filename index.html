@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <h4 class="logo">LOGO</h4>
+        <ul class="nav-links">
+            <li><a class="nav-item active" href="#">Home</a></li>
+            <li><a class="nav-item" href="#">Courses</a></li>
+            <li><a class="nav-item" href="#">Video</a></li>
+            <li><a class="nav-item" href="#">Exam</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="push"></div>
+    <div class="content">Content</div>
+    <script>
+        const navSlide=()=>{
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');  
+            const push = document.querySelector('.push');
+
+            burger.addEventListener('click',()=>{
+                nav.classList.toggle('nav-active');
+                push.classList.toggle('push-active');
+        });
+    }
+
+    navSlide();
+    </script>
+
+</body>
+</html>
